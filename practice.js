@@ -64,7 +64,7 @@ var adder = function() {
 
 //What is the difference between arguments and parameters?
 
- //arguments are the things you pass (or give) to function during invocation
+ // arguments are the things you pass (or give) to function during invocation
  
  // parameter is defined in the function declaration
 
@@ -77,7 +77,8 @@ var adder = function() {
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+  // false, 0, "", null, undefined, NaN
+  // can say " is false" in if statement
 
 
 
@@ -87,15 +88,17 @@ var adder = function() {
 
 //Create a function called myName that returns your name
 
-  //Code Here
+var myName = function(name) {
+  return name;
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+var newMyName = myName("erik");
 
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName);
 
 //Next problem
 
@@ -103,10 +106,16 @@ var adder = function() {
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+var outerFn = function(name) {
+  return function() {
+    return name;
+  }
+}
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+var innerFn = outerFn();
 
 //Now invoke innerFn.
+
+innerFn();
