@@ -22,7 +22,10 @@ var isTyler = function(name) {
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-  //Code Here
+var getName = function() {
+  var name = prompt("Name?");
+  return name;
+}
 
 
 //Next Problem
@@ -32,7 +35,9 @@ var isTyler = function(name) {
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+var welcome = function() {
+  alert("Welcome " + getName());
+}
 
 
 //Next problem
@@ -44,7 +49,13 @@ var isTyler = function(name) {
 //Save the result of the return value from your adder function, then alert "The Total Number was " + the number that was
 //returned from adder.
 
-  //Code Here
+var adder = function() {
+  var result = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    result += arguments[i];
+  }
+  return result;
+}
 
 
 //Next Problem
@@ -53,7 +64,10 @@ var isTyler = function(name) {
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+ //arguments are the things you pass (or give) to function during invocation
+ 
+ // parameter is defined in the function declaration
+
 
 
 //Next problem
